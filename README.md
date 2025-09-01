@@ -1,6 +1,6 @@
-# 🧀 Fromagerie DIGICHEES - API FastAPI
+# 🧀 Fromagerie DIGICHEESE - API FastAPI
 
-Projet de refonte du système d’information de la **Fromagerie DIGICHEES**.  
+Projet de refonte du système d’information de la **Fromagerie DIGICHEESE**.  
 Cette application remplace une ancienne solution sous Access par une API moderne basée sur **FastAPI**, **SQLAlchemy** et **MySQL**.
 
 ---
@@ -62,16 +62,21 @@ pip install -r requirements.txt
 
 Créer une base de données fromagerie_com dans phpMyAdmin / MySQL :
 
+```SQL
 CREATE DATABASE fromagerie_com CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-
+```
 
 Configurer les identifiants dans app/database.py (ou .env) :
 
+```SQL
 SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:password@localhost/fromagerie_com"
+```
 
 ### 5. Lancer le serveur
-uvicorn app.main:app --reload
 
+```
+uvicorn app.main:app --reload
+```
 
 Accéder à la doc interactive :
 👉 http://127.0.0.1:8000/docs
