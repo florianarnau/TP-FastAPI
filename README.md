@@ -1,6 +1,6 @@
-# 🧀 Fromagerie DIGICHEES - API FastAPI
+# 🧀 Fromagerie DIGICHEESE - API FastAPI
 
-Projet de refonte du système d’information de la **Fromagerie DIGICHEES**.  
+Projet de refonte du système d’information de la **Fromagerie DIGICHEESE**.  
 Cette application remplace une ancienne solution sous Access par une API moderne basée sur **FastAPI**, **SQLAlchemy** et **MySQL**.
 
 ---
