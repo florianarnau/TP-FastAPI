@@ -1,0 +1,116 @@
+🧀 Présentation PowerPoint – TP Fromagerie DIGICHEES
+🎯 Slide 1 – Titre
+
+Titre : Projet de refonte du SI – Fromagerie DIGICHEES
+
+Sous-titre : Développement d’une API avec FastAPI, SQLAlchemy & MySQL
+
+Auteur : Florian Arnau
+
+📝 Slide 2 – Contexte
+
+Application initiale sous Microsoft Access (2000)
+
+Problèmes : instabilité, obsolescence, faible évolutivité
+
+Besoin de refonte pour moderniser et sécuriser l’outil
+
+🧑‍💻 Slide 3 – Objectifs du projet
+
+Créer une API moderne en FastAPI
+
+Migrer la base de données vers MySQL
+
+Sécuriser et structurer le code
+
+Intégrer les rôles utilisateurs (Admin, OP-colis, OP-stock)
+
+Améliorer l’ergonomie et la maintenance
+
+🗂 Slide 4 – Stack technique
+
+Backend : Python 3.13, FastAPI
+
+BDD : MySQL + SQLAlchemy (ORM)
+
+Serveur : Uvicorn
+
+Gestion de versions : Git / GitHub
+
+Outils : VSCode, phpMyAdmin (Herd)
+
+🏗 Slide 5 – Modélisation BDD
+
+Tables principales :
+
+t_client, t_commune, t_commande, t_objet, t_conditionnement
+
+Relations via Foreign Keys (ex : villecli_id → t_communes.id)
+
+Diagramme simplifié (ajoute un schéma si tu veux)
+
+📋 Slide 6 – Fonctionnalités Admin
+
+Gestion des utilisateurs & rôles
+
+CRUD : objets, conditionnements, poids/vignettes
+
+Administration des communes et départements
+
+📦 Slide 7 – Fonctionnalités OP-colis
+
+Gestion des clients & commandes
+
+Association colis / objets / conditionnements
+
+Statistiques par période (mois/année)
+
+Historisation des mouvements
+
+🏬 Slide 8 – Fonctionnalités OP-stock
+
+Gestion des stocks
+
+Mise à jour annuelle
+
+Interface d’impression prévue
+
+🧪 Slide 9 – Qualité & Tests
+
+Code commenté, lisible, structuré
+
+Respect des conventions Python
+
+CRUD complet pour chaque modèle
+
+Stratégie de tests prévue avec pytest
+
+📦 Slide 10 – Données de test (Seed)
+
+Script seed.py pour remplir automatiquement la base :
+
+2 départements, 2 communes
+
+2 clients, 2 commandes
+
+Objets, conditionnements et relations
+
+Utilisateur Admin + rôles
+
+🚀 Slide 11 – Déploiement & utilisation
+
+Lancer le serveur :
+
+uvicorn app.main:app --reload
+
+
+Documentation interactive :
+👉 http://127.0.0.1:8000/docs
+
+✅ Slide 12 – Conclusion
+
+Modernisation réussie de l’application de gestion DIGICHEES
+
+API maintenable, évolutive et sécurisée
+
+Base prête pour de futures évolutions (front, stats avancées, envoi d’emails, etc.)
