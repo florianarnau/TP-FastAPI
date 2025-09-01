@@ -4,7 +4,7 @@ from app.routers import client, commande, objet, conditionnement, commune, depar
 
 models.Base.metadata.create_all(bind=database.engine)
 
-app = FastAPI(title="API Fromagerie DIGICHEES")
+app = FastAPI(title="API Fromagerie DIGICHEESE")
 
 # Inclure les routes
 app.include_router(client.router, prefix="/clients", tags=["clients"])
@@ -18,4 +18,4 @@ app.include_router(role.router, prefix="/roles", tags=["roles"])
 
 @app.get("/")
 def root():
-    return {"message": "Bienvenue sur l’API DIGICHEES"}
+    return {"message": "Bienvenue sur l’API DIGICHEESE"}
